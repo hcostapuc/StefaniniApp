@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppStefanini.Views.CityDetailPage"
+             Title="Details">
+    <StackLayout Spacing="20" Padding="15">
+        <Label Text="{Binding City.Name}" FontSize="Medium" />
+        <Label Text="Temperature:" FontSize="Default"></Label>
+        <Label Text="{Binding Temperature.TemperatureNow}" FontSize="Default"></Label>
+
+        <Label Text="Temperature Max:" FontSize="Default"></Label>
+        <Label Text="{Binding Temperature.TemperatureMax}" FontSize="Default"></Label>
+
+        <Label Text="Temperature Min:" FontSize="Default"></Label>
+        <Label Text="{Binding Temperature.TemperatureMin}" FontSize="Default"></Label>
+    </StackLayout>
+</ContentPage>
